@@ -1,0 +1,88 @@
+/*
+    COMPONENT 
+
+    * Defalut
+        * btn
+    * Props
+        - btn__icon
+        - btn--full
+    * Types
+        -btn--text
+        - btn--refilled
+        - btn--outline
+*/
+
+  .btn {
+    height: 40px;
+    font-size: .875rem;
+    font-weight: 500;
+    letter-spacing: 0.0052857143em;
+    text-decoration: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: transparent;
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    vertical-align: middle;
+  }
+
+  .btn:hover {
+    cursor: pointer;
+  }
+
+  /* 
+    OBJETS
+  */
+
+  /* TEXT BUTTON*/
+  .btn--text {
+    color: var(--color-700)
+  }
+  .btn--text:hover {
+    background-color: var(--color-50);
+  }
+  .btn--text:active {
+    background-color: var(--color-100);
+  }
+
+  /* REFILLED BUTTON */
+
+  .btn--refilled {
+    background-color: var(--color-primary);
+    color: var(--on-color-primary)
+  }
+  .btn--refilled:hover {
+    background-color: var(--color-600);
+  }
+  .btn--refilled:active {
+    background-color: var(--color-700);
+  }
+
+  /* OUTLINED BUTTON */
+
+  .btn--outlined {
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: var(--color-700);
+    color: var(--color-700)
+  }
+  .btn--outlined:hover {
+    background-color: var(--color-50);
+  }
+  .btn--outlined:active {
+    background-color: var(--color-100);
+  }
+    
+  .btn__icon {
+    padding-right: 8px;
+  }
+
+  .btn--full {
+    width: 100%;
+  }
