@@ -4,8 +4,9 @@ const Button = (props) => {
     return (
         <button
           className= {`btn ${props.type}`}
+          onClick={props.handleClick}
         >
-            favorite
+            {props.name}
         </button>
     );
 }

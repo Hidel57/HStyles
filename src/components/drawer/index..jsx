@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'
-import IconButton from '../icon_button'
+import IconButton from '../IconButton'
 import './drawer.css'
+import LinkTest from '../Link'
 
 export const Drawer = ({showModal, setshowModal, navLinks})  => {
 
@@ -25,8 +25,12 @@ export const Drawer = ({showModal, setshowModal, navLinks})  => {
               <ul>
                   {navLinks.map(link => (
                     <li className='drawer__item' key={link.name}>
-                      <Link to={link.route} onClick={handleClick}>{link.name}</Link>
-                  </li>
+                      <LinkTest
+                        route={link.route}
+                        name={link.name}
+                        handleClick={handleClick}
+                      />
+                    </li>
                   ))}
               </ul>
           </nav>

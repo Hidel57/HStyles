@@ -1,13 +1,16 @@
 import { useState } from 'react'
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import './App.css'
-import NavBar from "./components/nav_bar";
-import Drawer from './components/drawer/index.';
-import PageButtons from './routes/page_buttons';
-import PageIconButtons from './routes/page_icon_buttons';
-import PageHome from './routes/PageHome';
+import NavBar from "./components/NavBar";
+
+import Drawer from './components/Drawer/index.';
 import Footer from './components/Footer/Footer';
+import PageCards from './routes/PageCards';
+
+import PageHome from './routes/PageHome';
+import PageIconButtons from './routes/PageiconButtons';
+import PageButtons from './routes/PageButtons';
 
 function App() {  
 
@@ -15,6 +18,7 @@ function App() {
     {name: "Home", route: "/"},
     {name: "Buttons", route: "/page_buttons"},
     {name: "Icon Buttons", route: "/page_icon_buttons"},
+    {name: "Cards", route: "/page_cards"},
   ]
 
   const [showModal, setshowModal] = useState(false)
@@ -35,6 +39,7 @@ function App() {
             <Route path="/" element={<PageHome />} />
             <Route path="page_buttons" element={<PageButtons />} />
             <Route path="page_icon_buttons" element={<PageIconButtons />} />
+            <Route path="page_cards" element={<PageCards />} />
           </Routes>
           <Footer />
         </div>

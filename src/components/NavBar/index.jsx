@@ -1,7 +1,9 @@
+
 import './nav_bar.css'
-import '../button/button.css'
-import IconButton from '../icon_button'
-import { Link } from 'react-router-dom'
+import IconButton from '../IconButton'
+import logo from '../../logo.png'
+import Button from '../Button'
+import LinkTest from '../Link'
 
 export default function NavBar({navLinks, setshowModal}) {
   
@@ -21,11 +23,11 @@ export default function NavBar({navLinks, setshowModal}) {
           <div className='navbar-section'>
             <a 
               href="/"
-              className='link'
+              className=''
             >
               <img
                 className='navbar__logo'
-                src={'/logo12.png'}
+                src={logo}
                 alt='App logo'
                 width={40}
                 height={40}
@@ -36,18 +38,19 @@ export default function NavBar({navLinks, setshowModal}) {
               href="/"
               className='link'
             >
-              <h1 style={{color: "var(--color-primary)", paddingLeft: "4px", fontSize: "1.25em"}}>CompraNET</h1>
+              <h1 style={{color: "var(--color-primary)", paddingLeft: "4px", fontSize: "1.25em"}}>Styles</h1>
               </a>
           </div>
           <div className="navbar-section navbar-section--mobile-hide">
-                {navLinks.map(link => (
-                  <li 
-                    key={link.name}
-                    className='nav-item'
-                  >
-                    <Link to={link.route}>{link.name}</Link>
-                  </li>
-                ))}
+            {navLinks.map(link => (
+              <li className='nav-item' key={link.name}>
+                <LinkTest
+                  route={link.route}
+                  name={link.name}
+                  handleClick={() => console.log('click')}
+                />
+              </li>
+            ))}
           </div>
           <div className="navbar-section navbar-section--desktop-hide">
             <IconButton
@@ -60,9 +63,11 @@ export default function NavBar({navLinks, setshowModal}) {
             />
           </div>
           <div className="navbar-section navbar-section--mobile-hide">
-            <button className="btn btn--refilled">
-              Sing Up
-            </button>
+            <Button
+                name="Sign in"
+                type="btn--refilled"
+                handleClick={()=> console.log("Click")}
+              />
           </div>
         </div>
     </nav>
