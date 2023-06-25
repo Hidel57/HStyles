@@ -1,0 +1,13 @@
+.headline1 {
+    font-size: 2.5rem;
+}
+@media screen and (min-width: 521px){
+    .headline1 {
+        font-size: 3.125rem;
+    }
+}
+@media screen and (min-width: 921px){
+    .headline1 {
+        font-size: 3.75rem;
+    }
+}

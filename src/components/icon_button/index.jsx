@@ -4,7 +4,7 @@ const IconButton = ({name, handleClick}) => {
   return (
     <button 
       className="icon-btn"
-      onClick= {()=> handleClick(true)}
+      onClick= {handleClick}
     >
       <span className="material-icons">{name}</span>
     </button>  )

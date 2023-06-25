@@ -1,0 +1,32 @@
+.App {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+}
+
+.body-container {
+    display: flex;
+    width: 100%;
+}
+
+.content-container {
+    width: 100%;
+    padding-top: 72px;
+}
+
+.hero-container {
+    max-width: 840px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.article-container {
+    max-width: 760px;
+    width: 100%;
+    margin-bottom: 48px;
+}
