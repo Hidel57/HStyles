@@ -2,6 +2,7 @@
     display: flex;
     min-height: 100%;
     flex-direction: column;
+    background-color: var(--color-surface-dp0);
 }
 
 .body-container {

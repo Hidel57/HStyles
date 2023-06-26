@@ -19,7 +19,7 @@
 .drawer {
     position: fixed;
     top: 0;
-    background-color: #fff;
+    background-color: var(--color-surface-dp3);
     width: 250px;
     height: 100%;
     z-index: 6;

@@ -16,12 +16,25 @@
     --color-950: #470a1f;
   
     --color-primary: var(--color-500);
-    --on-color-primary: #fff;
+    --color-onprimary: #121212;
     --color-primary-variant: #b21e4b;
-    --bg-color: rgb(246, 246, 246);
-    --surface-dp1-color: #fff;
-    --surface-dp2-color: #fff;
-    --surface-dp3-color: #fff;
+    --color-surface-dp0: #fff;
+    --color-surface-dp1: #fff;
+    --color-surface-dp2: #fff;
+    --color-surface-dp3: #fff;
+    --color-surface-dp4: #fff;
+    --color-surface-dp6: #fff;
+    --color-surface-dp8: #fff;
+
+    --color-btnRefilled: var(--color-500);
+    --color-btnRefilledHover: var(--color-600);
+    --color-btnRefilledActive: var(--color-700);
+    --color-onBtnRefilled: var(--color-50);
+
+    --color-btnOutlined: var(--color-700);
+    --color-btnOutlinedHover: var(--color-50);
+    --color-btnOutlinedActive: var(--color-100);
+
     --font-high-color: rgba(0, 0, 0, 0.87);
     --font-medium-color: rgba(0, 0, 0, 0.6);
     --font-disabled-color: rgba(0, 0, 0, 0.38);
@@ -31,12 +44,25 @@
   }
   
   [data-theme="dark"] {
-    --primary-color: #f7aab9;
-    --onprimary-color: #470a1f;
-    --bg-color: #121212;
-    --surface-dp1-color: #1d1d1d;
-    --surface-dp2-color: #212121;
-    --surface-dp3-color: #242424;
+    --color-primary: var(--color-400);
+    --color-onprimary: #fff;
+    --color-surface-dp0: #121212;
+    --color-surface-dp1: #1e1e1e;
+    --color-surface-dp2: #212121;
+    --color-surface-dp3: #242424;
+    --color-surface-dp4: #272727;
+    --color-surface-dp6: #2c2c2c;
+    --color-surface-dp8: #2d2d2d;
+
+    --color-btnRefilled: var(--color-400);
+    --color-btnRefilledHover: var(--color-300);
+    --color-btnRefilledActive: var(--color-500);
+    --color-onBtnRefilled: var(--color-950);
+
+    --color-btnOutlined: var(--color-300);
+    --color-btnOutlinedHover: var(--color-950);
+    --color-btnOutlinedActive: var(--color-900);
+
     --font-high-color: rgba(255, 255, 255, 0.87);
     --font-medium-color: rgba(255, 255, 255, 0.6);
     --font-disabled-color: rgba(255, 255, 255, 0.38);

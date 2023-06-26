@@ -4,6 +4,7 @@ import IconButton from '../IconButton'
 import logo from '../../logo.png'
 import Button from '../Button'
 import LinkTest from '../Link'
+import ToggleDarkMode from '../ToggleDarkMode'
 
 export default function NavBar({navLinks, setshowModal}) {
   
@@ -63,6 +64,7 @@ export default function NavBar({navLinks, setshowModal}) {
             />
           </div>
           <div className="navbar-section navbar-section--mobile-hide">
+            <ToggleDarkMode />
             <Button
                 name="Sign in"
                 type="btn--refilled"

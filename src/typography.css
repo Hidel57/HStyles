@@ -1,5 +1,10 @@
+div,h1, h2, h3, h4, h5, h6 p,span {
+  color: var(--color-onprimary);  
+}
+
 .headline1 {
     font-size: 2.5rem;
+    color: var(--color-onprimary)
 }
 @media screen and (min-width: 521px){
     .headline1 {

@@ -42,26 +42,26 @@
 
   /* TEXT BUTTON*/
   .btn--text {
-    color: var(--color-700)
+    color: var(--color-btnOutlined)
   }
   .btn--text:hover {
-    background-color: var(--color-50);
+    background-color: var(--color-btnOutlinedHover);
   }
   .btn--text:active {
-    background-color: var(--color-100);
+    background-color: var(--color-btnOutlinedActive);
   }
 
   /* REFILLED BUTTON */
 
   .btn--refilled {
-    background-color: var(--color-primary);
-    color: var(--on-color-primary)
+    background-color: var(--color-btnRefilled);
+    color: var(--color-onBtnRefilled)
   }
   .btn--refilled:hover {
-    background-color: var(--color-600);
+    background-color: var(--color-btnRefilledHover);
   }
   .btn--refilled:active {
-    background-color: var(--color-700);
+    background-color: var(--color-btnRefilledActive);
   }
 
   /* OUTLINED BUTTON */
@@ -69,14 +69,14 @@
   .btn--outlined {
     outline-style: solid;
     outline-width: 1px;
-    outline-color: var(--color-700);
-    color: var(--color-700)
+    outline-color: var(--color-btnOutlined);
+    color: var(--color-btnOutlined)
   }
   .btn--outlined:hover {
-    background-color: var(--color-50);
+    background-color: var(--color-btnOutlinedHover);
   }
   .btn--outlined:active {
-    background-color: var(--color-100);
+    background-color: var(--color-btnOutlinedActive);
   }
     
   .btn__icon {

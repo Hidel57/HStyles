@@ -1,6 +1,7 @@
 .link {
     cursor: pointer;
     height: 24px;
+    color: var(--color-onprimary)
   }
 
 .link.active {

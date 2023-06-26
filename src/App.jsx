@@ -9,16 +9,17 @@ import Footer from './components/Footer/Footer';
 import PageCards from './routes/PageCards';
 
 import PageHome from './routes/PageHome';
-import PageIconButtons from './routes/PageiconButtons';
-import PageButtons from './routes/PageButtons';
+import PageComponentBasics from './routes/PageComponentsBasics';
+import PageCarts from './routes/PageCarts';
 
 function App() {  
 
   const navLinks = [
     {name: "Home", route: "/"},
-    {name: "Buttons", route: "/page_buttons"},
-    {name: "Icon Buttons", route: "/page_icon_buttons"},
+    {name: "Components Basics", route: "/components_basics"},
+    // {name: "Components Cards", route: "#"},
     {name: "Cards", route: "/page_cards"},
+    {name: "Carts", route: "/page_carts"},
   ]
 
   const [showModal, setshowModal] = useState(false)
@@ -37,9 +38,9 @@ function App() {
         <div className="content-container">
           <Routes>
             <Route path="/" element={<PageHome />} />
-            <Route path="page_buttons" element={<PageButtons />} />
-            <Route path="page_icon_buttons" element={<PageIconButtons />} />
+            <Route path="components_basics" element={<PageComponentBasics />} />
             <Route path="page_cards" element={<PageCards />} />
+            <Route path="page_carts" element={<PageCarts />} />
           </Routes>
           <Footer />
         </div>
