@@ -12,7 +12,12 @@
 
 .content-container {
     width: 100%;
-    padding-top: 72px;
+}
+.main-container {
+    width: 100%;
+}
+.main-content {
+    padding-top: 70px;
 }
 
 .hero-container {
@@ -20,8 +25,8 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin-right: auto;
     margin-left: auto;
 }
@@ -29,5 +34,34 @@
 .article-container {
     max-width: 760px;
     width: 100%;
-    margin-bottom: 48px;
+}
+
+.block {
+    max-width: 1212px;
+    margin: 0 auto;
+    padding-bottom: 64px;
+}
+/* .block:last-child {
+    padding-bottom: 0;
+} */
+
+.chunk {
+    margin-bottom: 32px;
+}
+@media screen and (min-width: 772px){
+    .block {
+        padding-bottom: 96px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .block {
+        padding-bottom: 112px;
+    }
+}
+
+
+/****products***/
+.product-container {
+    padding-top: 72px;
 }

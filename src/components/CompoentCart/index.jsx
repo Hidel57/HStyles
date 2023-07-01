@@ -15,8 +15,8 @@ const ComponentCart = (props) => {
                 <div className="cart-item" key={item.name}>
                     <div className="cart-item__img">
                         <img
-                            src="https://img.freepik.com/fotos-premium/vertical-joven-mujer-moderna-ropa-verano-al-aire-libre_475667-1207.jpg"
-                            alt="img card"
+                            src="https://dummyimage.com/100x120/777777/555555&text=Image"
+                            alt="img cart"
                         />
                     </div>
                     <div>
@@ -38,12 +38,12 @@ const ComponentCart = (props) => {
                 </div>
                 <Button
                     name = "Shopping Products"
-                    type = "btn--refilled"
+                    variant = "btn--refilled btn--full"
                     handleClick = {() => console.log('click')}
                 />
                 <Button
                     name = "Continue to Check out"
-                    type = "btn--text"
+                    variant = "btn--text btn--full"
                     handleClick = {() => console.log('click')}
                 />
             </footer>

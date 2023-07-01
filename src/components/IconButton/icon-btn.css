@@ -9,7 +9,7 @@
     outline: none;
     background-color: transparent;
     fill: currentColor;
-    color: inherit;
+    color: var(--color);
     cursor: pointer;
     user-select: none;
     width: 48px;

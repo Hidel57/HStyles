@@ -1,12 +1,14 @@
 import './button.css'
 
-const Button = (props) => { 
+const Button = (props) => {
+    const {name, icon, variant, onClick} = props
     return (
         <button
-          className= {`btn ${props.type}`}
-          onClick={props.handleClick}
+          className= {`btn ${variant}`}
+          onClick={onClick}
         >
-            {props.name}
+            {icon ? <span className="btn__icon material-icons">{icon}</span> : null}
+            {name}
         </button>
     );
 }

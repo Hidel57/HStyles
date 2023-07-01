@@ -1,0 +1,62 @@
+/*
+  BANNER
+*/
+
+.banner {
+  dsplay: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 2rem;
+  width: 100%;
+  height: 600px;
+  background-color: #000;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+  text-align: center; }
+  .banner__hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    object-fit: cover;
+    object-position: center; }
+  .banner-container__title {
+    position: relative;
+    height: max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    padding: 1rem 1rem; }
+  .banner__title {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 3.5rem; }
+  .banner-container__subtitle {
+    position: relative;
+    height: max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2f2f2f;
+    padding: .5rem 1rem; }
+  .banner__subtitle {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+
+  @media screen and (min-width: 576px) {
+    .banner__title {
+      font-size: 4rem;
+      line-height: 4rem; } }
+  
+  @media screen and (min-width: 768px) {
+    .banner__title {
+      font-size: 5.5rem;
+      line-height: 5.5rem; } }

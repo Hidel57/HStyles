@@ -6,13 +6,12 @@
 
 .link.active {
     color: var(--color-primary);
-    border-bottom: 2px solid var(--color-primary);
+    /* border-bottom: 2px solid var(--color-primary); */
   }
 
 a[class="link"]:hover {
-  color: var(--color-primary);
+  color: var(--color-300);
 }
 a[class="link"]:active {
-  font-size: 1.3rem;
   color: var(--color-600);
 }

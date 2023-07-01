@@ -67,8 +67,8 @@ export default function NavBar({navLinks, setshowModal}) {
             <ToggleDarkMode />
             <Button
                 name="Sign in"
-                type="btn--refilled"
-                handleClick={()=> console.log("Click")}
+                variant="btn--refilled"
+                onClick={()=> console.log("click")}
               />
           </div>
         </div>

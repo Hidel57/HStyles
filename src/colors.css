@@ -3,6 +3,7 @@
 -------------*/
 
 :root {
+    --color: #121212;
     --color-50: #fef2f4;
     --color-100: #fde6e9;
     --color-200: #fbd0d9;
@@ -15,6 +16,7 @@
     --color-900: #801b40;
     --color-950: #470a1f;
   
+    --collor-text: #1f1f1f;
     --color-primary: var(--color-500);
     --color-onprimary: #121212;
     --color-primary-variant: #b21e4b;
@@ -44,6 +46,7 @@
   }
   
   [data-theme="dark"] {
+    --color: #fff;
     --color-primary: var(--color-400);
     --color-onprimary: #fff;
     --color-surface-dp0: #121212;
@@ -54,6 +57,7 @@
     --color-surface-dp6: #2c2c2c;
     --color-surface-dp8: #2d2d2d;
 
+    --color-text: #e3e3e3;
     --color-btnRefilled: var(--color-400);
     --color-btnRefilledHover: var(--color-300);
     --color-btnRefilledActive: var(--color-500);

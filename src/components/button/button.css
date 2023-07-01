@@ -1,15 +1,15 @@
 /*
     COMPONENT 
 
-    * Defalut
+    * Default
         * btn
     * Props
         - btn__icon
-        - btn--full
-    * Types
-        -btn--text
+    * Variants
+        - btn--text
         - btn--refilled
         - btn--outline
+        - btn--full
 */
 
   .btn {
@@ -25,6 +25,7 @@
     position: relative;
     align-items: center;
     justify-content: center;
+    width: max-content;
     min-width: 40px;
     border: none;
     outline: none;
@@ -36,8 +37,12 @@
     cursor: pointer;
   }
 
+  .btn__icon {
+    padding-right: 8px;
+  }
+
   /* 
-    OBJETS
+    VARIANTS
   */
 
   /* TEXT BUTTON*/
@@ -77,10 +82,6 @@
   }
   .btn--outlined:active {
     background-color: var(--color-btnOutlinedActive);
-  }
-    
-  .btn__icon {
-    padding-right: 8px;
   }
 
   .btn--full {
