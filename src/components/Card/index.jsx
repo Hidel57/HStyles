@@ -1,25 +1,35 @@
 import IconButton from '../IconButton';
+import Button from '../Button';
 import './cards.css'
 
-const Card = () => {
+const Card = ({card}) => {
     return (
         <div className='card'>
             <div className="card__primary">
                 <div className="card__media">
                     <img
-                    src="https://img.freepik.com/fotos-premium/vertical-joven-mujer-moderna-ropa-verano-al-aire-libre_475667-1207.jpg"
+                    className="img-responsive"
+                    src={card.img}
                     alt="img card" />
                 </div>
                 <div className="card__info-primary">
-                    <div className="card__title">Card Title</div>
-                    <div className="card__subtitle">Card Subtitle</div>
+                    <div className="headline6">{card.title}</div>
+                    <div className="subtitle1">{card.subtitle}</div>
                 </div>
                 <div className="card__info-secondary">
-                    <div className="card__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati quae accusantium dolore praesentium vitae minus ullam laboriosam itaque. Alias non porro aperiam eum, autem cupiditate quod. Magni enim eligendi et.</div>
+                    <div className="card__description">
+                        <p className="text-body2">{card.description}</p>
+                    </div>
                 </div>
             </div>
             <div className="card__actions">
-                <div className="card__actions-buttons"></div>
+                <div className="card__actions-buttons">
+                    <Button
+                        name = "Read"
+                        variant = "btn--text"
+                        onClick = {()=> console.log("Click")}
+                    />
+                </div>
                 <div className="card__actions-icons">
                     <IconButton
                         name="favorite"

@@ -7,12 +7,15 @@
         - btn__icon
     * Variants
         - btn--text
-        - btn--refilled
+        - btn--contained
         - btn--outline
         - btn--full
 */
 
-  .btn {
+.btn {
+    color: var(--color-primary);
+    position: relative;
+    background-color: transparent;
     height: 40px;
     font-size: .875rem;
     font-weight: 500;
@@ -20,68 +23,67 @@
     text-decoration: none;
     padding-left: 1rem;
     padding-right: 1rem;
-    background-color: transparent;
     display: inline-flex;
-    position: relative;
     align-items: center;
     justify-content: center;
     width: max-content;
     min-width: 40px;
+    cursor: pointer;
     border: none;
     outline: none;
-    border-radius: 4px;
+    border-radius: 8px;
     vertical-align: middle;
   }
-
-  .btn:hover {
-    cursor: pointer;
-  }
-
+  .btn::after,
+  .btn::before {
+    position: absolute;
+    border-radius: 8px;
+    pointer-events: none;
+    background-color: var(--color-bg-base);
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: 1;}
+ 
   .btn__icon {
-    padding-right: 8px;
-  }
+    padding-right: 8px;}
 
   /* 
     VARIANTS
   */
 
   /* TEXT BUTTON*/
-  .btn--text {
-    color: var(--color-btnOutlined)
-  }
-  .btn--text:hover {
-    background-color: var(--color-btnOutlinedHover);
-  }
-  .btn--text:active {
-    background-color: var(--color-btnOutlinedActive);
-  }
-
-  /* REFILLED BUTTON */
-
-  .btn--refilled {
-    background-color: var(--color-btnRefilled);
-    color: var(--color-onBtnRefilled)
-  }
-  .btn--refilled:hover {
-    background-color: var(--color-btnRefilledHover);
-  }
-  .btn--refilled:active {
-    background-color: var(--color-btnRefilledActive);
-  }
+  .btn--text:hover::before {
+    opacity: 0.1;}
+  .btn--text:active::before {
+    opacity: 0.24;}
 
   /* OUTLINED BUTTON */
 
   .btn--outlined {
     outline-style: solid;
     outline-width: 1px;
-    outline-color: var(--color-btnOutlined);
-    color: var(--color-btnOutlined)
+    outline-color: var(--color-primary);}
+    .btn--outlined:hover {
+      outline-color: var(--color-outline-base);}
+      .btn--outlined:hover::before {
+        opacity: 0.04;}
+      .btn--outlined:active::before {
+        opacity: 0.24;}
+
+  /* CONTAINED BUTTON */
+  .btn--contained {
+    background-color: var(--color-primary);
+    color: var(--color-on)
   }
-  .btn--outlined:hover {
-    background-color: var(--color-btnOutlinedHover);
+  .btn--contained:hover {
+    background-color: var(--color-btnRefilledHover);
   }
-  .btn--outlined:active {
-    background-color: var(--color-btnOutlinedActive);
+  .btn--contained:active {
+    background-color: var(--color-btnRefilledActive);
   }
 
   .btn--full {

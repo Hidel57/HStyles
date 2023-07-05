@@ -1,0 +1,27 @@
+.quantity {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--color-outline-base);
+    border-radius: 28px;
+    padding: 2px;}
+
+.quantity__btn {
+    color: var(--color-primary);
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.quantity__btn:disabled {
+    color: var(--color-disabled);
+}
+.quantity__label {
+    color: var(--color-primary);
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;}

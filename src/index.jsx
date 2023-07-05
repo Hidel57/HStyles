@@ -5,6 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import './reset.css';
 import './colors.css';
 import './typography.css';
+import './layout.css';
 import './grid.css';
 import App from './App';
 

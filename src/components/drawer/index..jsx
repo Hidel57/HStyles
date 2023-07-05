@@ -9,9 +9,9 @@ export const Drawer = ({showModal, setshowModal, navLinks})  => {
   }
 
   return (
-    <div className='drawer-root'>
-      <aside className='drawer drawer--modal drawer--shadow-right' 
-        style={showModal? {transform: "translateX(0px)", transition: "transform 250ms cubic-bezier(0,0,.38,.9)", zIndex:"10"}: {}}
+    <div>
+      <aside className='drawer drawer--modal-left' 
+        style={showModal? {transform: "translateX(0)", transition: "transform 250ms cubic-bezier(0,0,.38,.9)", zIndex:"10"}: {}}
       >
         <div className="drawer__header">
           <IconButton

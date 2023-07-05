@@ -1,12 +1,13 @@
 
 import './nav_bar.css'
 import IconButton from '../IconButton'
-import logo from '../../logo.png'
 import Button from '../Button'
 import LinkTest from '../Link'
 import ToggleDarkMode from '../ToggleDarkMode'
 
-export default function NavBar({navLinks, setshowModal}) {
+export default function NavBar(props) {
+
+  const {logo, navLinks, setshowModal} = props
   
   const handleClick = () => {
     setshowModal(true)
@@ -24,23 +25,15 @@ export default function NavBar({navLinks, setshowModal}) {
           <div className='navbar-section'>
             <a 
               href="/"
-              className=''
+              className='navbar__logo'
             >
               <img
-                className='navbar__logo'
                 src={logo}
                 alt='App logo'
                 width={40}
                 height={40}
               />
-
-              </a>
-              <a 
-              href="/"
-              className='link'
-            >
-              <h1 style={{color: "var(--color-primary)", paddingLeft: "4px", fontSize: "1.25em"}}>Styles</h1>
-              </a>
+            </a>
           </div>
           <div className="navbar-section navbar-section--mobile-hide">
             {navLinks.map(link => (
@@ -67,7 +60,7 @@ export default function NavBar({navLinks, setshowModal}) {
             <ToggleDarkMode />
             <Button
                 name="Sign in"
-                variant="btn--refilled"
+                variant="btn--contained"
                 onClick={()=> console.log("click")}
               />
           </div>

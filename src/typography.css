@@ -13,15 +13,38 @@
 .headline3,
 .headline4,
 .headline5,
-.headline6 {
-    color: var(--color)
+.headline6,
+.text-body1 {
+    color: var(--color-text);
 }
+
+.headline1,
+.headline2,
+.headline3,
+.headline4 {
+    margin-bottom: 1rem;}
+.headline5,
+.headline6,
+.subtitle1,
+.subtitle2{
+    margin-bottom: .5rem;}
+
+.subtitle1,
+.subtitle2,
+.text-body2 {
+  color: var(--color-text2)}
 
 .text-body1,
 .text-body2{
-  color: var(--color-text);
-}
-
+  margin-top: 8px;
+  margin-bottom: 8px;}
+  .text-body1:first-child,
+  .text-body2:first-child{
+    margin-top: 0;}
+  .text-body1:last-child,
+  .text-body2:last-child{
+    margin-bottom: 0;}
+  
 .headline1 {
   font-size: var(--headline1);
   font-weight: 500;
@@ -99,14 +122,11 @@
     font-size: 1.125rem;
     line-height: 1.5rem;
     font-weight: 500;
-    letter-spacing: normal;
-    opacity: 0.8; }
+    letter-spacing: normal;}
   
   .headline5 {
     font-size: 1rem;
-    font-weight: 500;
-    opacity: 0.8;
-    letter-spacing: -1.5px;
+    letter-spacing: -1px;
     line-height: 1.5rem; }
   
   .headline6 {
@@ -146,14 +166,11 @@
       font-size: 2.125rem;
       line-height: 2.5rem;
       font-weight: 400;
-      letter-spacing: 0.075px;
-      opacity: 0.8; }
+      letter-spacing: 0.075px;}
     .headline5 {
       font-size: 1.5rem;
-      font-weight: bold;
       letter-spacing: 0px;
-      line-height: 1.875rem;
-      opacity: 0.8; }
+      line-height: 1.875rem;}
     .headline6 {
       font-size: 1.25rem;
       font-weight: 500;

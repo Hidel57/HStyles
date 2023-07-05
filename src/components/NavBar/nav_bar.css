@@ -50,12 +50,10 @@
     padding-left: 32px;
     padding-right: 32px;
 }
-
+/* 
 .navbar__logo {
-    height: 42px;
-    width: 42px;
-    border-radius: 4px;
-}
+    min-width: 100%;
+} */
 @media screen and (max-width: 768px) {
     .navbar__logo {
         height: 32px;
